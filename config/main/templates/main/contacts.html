@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <img style="margin:0 30px 10px" src="{% static 'main/img/13.jpg' %}" alt="Logo">
+        <h1>Контакты</h1>
+        <button class="btn btn-warning">ЗДРАСТВУЙТЕ, ВЫ МОЖЕТЕ СВЯЗАТЬСЯ С НАМИ ЧЕРЕЗ Telegram, WhatsApp И Instagram</button>
+        <div class="social-icons">
+            <a href="https://t.me/hhhdfsdf13">
+                <li class="logo telegram"><i class="fa-brands fa-telegram"></i></li>
+            </a>
+            <a href="https://wa.me/yourwhatsappnumber">
+                <li class="logo whatsapp"><i class="fa-brands fa-whatsapp"></i></li>
+            </a>
+            <a href="https://www.instagram.com/yourinstagramusername">
+                <li class="logo instagram"><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo i {
+            font-size: 2em;
+        }
+        .telegram i {
+            color: #0088cc;
+        }
+        .whatsapp i {
+            color: #25d366;
+        }
+        .instagram i {
+            color: #e4405f;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+{% endblock %}

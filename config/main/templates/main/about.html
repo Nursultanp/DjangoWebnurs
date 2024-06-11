@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <div class="content-wrapper">
+        <img class="square-image" src="{% static 'main/img/12.jpeg' %}" alt="Logo">
+        <p class="text-muted">Дмитрий Петров
+
+Дата и место рождения: 10 февраля 1975 года, Москва, Россия
+
+Образование:
+
+    Высшее техническое, Московский Инженерно-Физический Институт (МИФИ)
+    Магистр бизнес-администрирования (MBA), Harvard Business School</p>
+    </div>
+
+
+    <div class="content-wrapper">
+        <img class="square-image" src="{% static 'main/img/10918.jpg' %}" alt="Logo">
+        <p class="text-muted">Алексей "Тень" Мельников
+
+Родился: 15 октября 1985 года, Санкт-Петербург, Россия
+Национальность: Русский
+Известен как: Хакер, эксперт по кибербезопасности, блогер</p>
+    </div>
+    <div class="content-wrapper">
+        <img class="square-image" src="{% static 'main/img/13.jpg' %}" alt="Logo">
+        <p class="text-muted">Александр Иванов
+
+Дата и место рождения: 25 сентября 1985 года, Санкт-Петербург, Россия
+
+Образование:
+
+    Бакалавр бухгалтерского учета и аудита, Санкт-Петербургский Государственный Университет (СПбГУ)
+    Магистр финансов, Harvard Business School</p>
+    </div>
+    <div class="content-wrapper">
+        <img class="square-image" src="{% static 'main/img/123.jpeg' %}" alt="Logo">
+        <p class="text-muted">Сергей Орлов
+
+Дата и место рождения: 15 ноября 1982 года, Новосибирск, Россия
+
+Известен как: Журналист-расследователь, автор документальных репортажей, ведущий подкастов</p>
+    </div>
+
+{% endblock %}
